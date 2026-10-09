@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Frecuencia_Cardiaca_CVMG.MainPage">
+
+    <ScrollView>
+		<VerticalStackLayout Padding="30"
+		Spacing="20" 
+		VerticalOptions="Center">
+
+			<Label Text="Frecuencia Cardíaca" 
+			FontSize="28" FontAttributes="Bold" HorizontalOptions="Center" />
+			<Label Text="Ingresa los latidos detectados en 15 segundos:" FontSize="16" HorizontalOptions="Center" />
+			<Entry x:Name="txtLatidos" Placeholder="Cantidad de latidos" Keyboard="Numeric" HorizontalTextAlignment="Center" />
+			<Button Text="Calcular frecuencia" Clicked="OnCalcularClicked" />
+			<Label x:Name="lblResultado" Text="El resultado aparecerá aquí" FontSize="18" HorizontalTextAlignment="Center" />
+		</VerticalStackLayout>
+	</ScrollView>
+
+</ContentPage>
